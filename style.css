@@ -13,3 +13,92 @@
     padding: 0;
     font-size: 62.5%; 
 }
+.container {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    position: relative;
+    height: 32px;
+    width: auto;
+    bottom: 70px;
+}
+
+.main-title {
+    font-size: 2rem;
+}
+
+.title {
+    position: relative;
+    bottom: 8px;
+    font-weight: 800;
+}
+
+.subtitle {
+    text-align: center;
+    font-weight:100;
+    color: var(--very-light-pink);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 85%;
+}
+
+.input {
+    display: flex;
+    height: 40px;
+    margin-top: 10px;
+    border: 0;
+    padding: 10px;
+    background-color: var(--text-input-field);
+    border-radius: 10px;
+    font-size: 1.6rem; 
+}
+
+.label {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.primary-buttom {
+    margin-top: 40px;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    background-color: var(--hospital-green);
+    font-size: 1.6rem;
+    color: var(--white);
+}
+
+.container-sentemail-logo {
+    width: 120px;
+    height: 120px;
+    background-color: var(--text-input-field);
+    padding: 36px 20px;
+    border-radius: 200px;
+    margin-top: 40px;
+}
+
+.primary-logo {
+    width: 80px;
+    height: 48px;
+}
+
+.notas {
+    margin-top: 25px;
+    font-size: 1.4rem;
+}
+
+.notas a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: var(--hospital-green);
+}
