@@ -129,14 +129,14 @@
     display: flex;
     justify-content: center;
     height: auto;
-    width: 100%;
+    width: auto;
 }
 
 .items__container--cards {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;   
+    grid-template-columns: repeat(auto-fill, minmax(144px, 1fr));
     width: 90%;
+    justify-items: center;
 }
 
 .card__item--container {
@@ -144,12 +144,14 @@
     grid-template-columns: 2fr;
     grid-template-rows: 1fr;
     margin: 10px 8px;
+    align-items: center;
+    width: auto;
+    height: auto;
 }
 
 .card__item--image {
     width: 128px;
     height: 128px;
-    grid-row: 1/2;
     background-color: var(--hospital-green);
     border-radius: 10px;
 }
