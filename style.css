@@ -5,6 +5,9 @@
     --black: #000000;
     --hospital-green: #acd9b2;
     --dark: #232830;
+    --sm: 1.4rem;
+    --md: 1.6rem;
+    --lg: 1.8rem;
 }
 
 * {
@@ -187,4 +190,199 @@
     background-position: center;
     background-size: auto;
     border-style: none;
+}
+
+
+/* Menú desplegable Desktop */
+
+.desktop__menu--container {
+    width: 130px;
+    height: auto;
+    border: 1px solid var(--very-light-pink);
+    border-radius: 6px;
+    padding: 20px;
+    
+}
+
+.desktop__menu--container ul {
+    list-style: none;
+    text-align: end;
+
+}
+
+.desktop__menu--container ul li:last-child {
+    padding-top: 20px;
+    border-top: 1px solid var(--very-light-pink);
+    margin: 0;
+}
+
+.desktop__menu--container ul li a {
+    display: inline-block;
+    font-size: var(--md);
+    color: var(--black);
+    text-decoration: none;
+}
+.desktop__menu--container ul li {
+    margin-bottom: 20px;
+}
+
+.desktop__menu--container ul li:last-child a {
+    color: var(--hospital-green);
+    font-size: var(--sm);
+}
+
+.desktop__menu--container ul li:nth-child(1),
+.desktop__menu--container ul li:nth-child(2) {
+    font-weight: bold;
+}
+
+/* Menú desplegable mobile */
+
+.categories__list--container {
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: column;padding: 50px;
+    font-weight: 600;
+}
+
+.categories__list--container h3 {
+    font-size: 1.8rem;
+    
+}
+
+.categories__list--container img {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: calc(100% - 29px);
+    top: 15px;
+}
+
+.categories__list--container ul {
+    list-style: none;
+    margin: 0 0 60px 0;
+}
+.categories__list--container ul li {
+    font-size: 1.7rem;
+    margin-top: 40px;
+    margin-bottom: 30px;
+} 
+
+.categories__list--container ul li:nth-child(7) {
+    padding-top: 40px;
+    border-top: 1px solid var(--text-input-field);
+}
+
+.account__dates--container span {
+    display: inline-block;
+    font-size: var(--sm);
+    font-weight: lighter;
+    margin-top: 10px;
+}
+
+.account__dates--container span:last-child {
+    color: var(--hospital-green);
+    font-weight: 600;
+}
+
+/* Carrito de compras mobile */
+
+.navigator {
+    display: grid;
+    width: 100%;
+    height: 50px;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: "1 2 3";
+    align-items: center;
+    justify-items: center;
+    border-bottom: 1px solid var(--text-input-field);
+}
+
+.navigator img {
+    width: 30px;
+    height: 30px;
+}
+
+.navigator img:first-child {
+    margin-right: 30px;
+}
+
+.navigator img:last-child {
+    margin-left: 30px;
+}
+
+.navigator h2 {
+    font-size: var(--lg);
+}
+
+.orders--container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    flex-direction: column;
+}
+
+.orders--container header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "uno dos" "tres dos";
+    width: 90%;
+    height: 65px;
+    margin: 15px 0 0 0;
+    background-color: var(--text-input-field);
+    border-radius: 10px;font-size: 2.5rem;
+    font-weight: 600;
+    place-items: center end;
+}
+
+.orders--container header p:first-child {
+    grid-area: uno;
+    margin: 12px 50px 0 0;
+}
+
+.orders--container header p:last-child {
+    grid-area: dos;
+    margin-right: 20px;
+}
+
+.orders--container header span {
+    grid-area: tres;
+    margin: 0 50px 12px 0;
+    color: var(--very-light-pink);
+    font-weight: 600;
+}
+
+.main__articles--container {
+    width: 90%;
+    height: auto;
+}
+
+.main__articles--container div {
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: 70px;
+    margin: 30px 0;
+    place-items: center;
+}
+
+.main__articles--container div img {
+    width: 70px;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.main__articles--container div span {
+    font-size: 1.4rem;
+    font-weight: lighter;
+    color: var(--very-light-pink);
+}
+
+.main__articles--container div p {
+    font-size: 1.6rem;
+    font-weight: bold;
 }
