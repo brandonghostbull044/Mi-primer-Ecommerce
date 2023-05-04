@@ -362,8 +362,9 @@
 
 .main__articles--container div {
     display: grid;
-    grid-template-columns: auto 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-areas: "uno dos tres" "cuatro dos tres";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     width: 100%;
     height: 70px;
     margin: 30px 0;
@@ -372,7 +373,7 @@
 
 .main__articles--container div img {
     width: 70px;
-    height: 100%;
+    height: 70px;
     border-radius: 15px;
 }
 
@@ -380,9 +381,59 @@
     font-size: 1.4rem;
     font-weight: lighter;
     color: var(--very-light-pink);
+    text-align: center;
 }
 
 .main__articles--container div p {
     font-size: 1.6rem;
     font-weight: bold;
+    grid-area: tres;
+}
+
+.main__articles--container .orders__cart--articlesnum1 {
+    grid-area: uno;
+}
+
+.main__articles--container .orders__cart--articlesnum4 {
+    grid-area: cuatro;
+}
+
+.main__articles--container div .icon {
+    position: absolute;
+    left: calc(100% - 25px);
+    grid-area: tres;
+    width: 7px;
+    height: 12px;
+}
+
+//Barra de Navegación
+
+.desktop__nav--nav {
+    display: grid;
+    place-items: end;
+    height: 100%;
+    width: 100%;
+}
+
+.desktop__nav--nav .left {
+    display: flex;
+    flex-direction: row;
+    grid-area: left;
+    height: 100%;
+    width: auto;
+}
+
+.desktop__nav--nav .right {
+    display: flex;
+    flex-direction: row;
+    grid-area: right;
+    height: 100%;
+    width: auto;
+}
+
+.desktop__nav--nav .left ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    font-size: 3rem;
 }
