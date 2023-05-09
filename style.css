@@ -58,6 +58,7 @@
     height: auto;
     width: 85%;
     max-width: 475px;
+    align-items: center;
 }
 
 .input {
@@ -79,15 +80,20 @@
 }
 
 .primary-buttom {
+    display: flex;
+    flex-direction: row;
     position: relative;
-    margin-top: 40px;
     height: 40px;
+    width: 100%;
     border-radius: 10px;
     border: 0;
     background-color: var(--hospital-green);
     font-size: 1.6rem;
     color: var(--white);
-    max-width: 200px;
+    max-width: 400px;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0 0 0;
 }
 
 .secundary-buttom {
@@ -357,7 +363,7 @@
 
 .main__articles--container {
     width: 90%;
-    height: auto;
+    height: 100%;
 }
 
 .main__articles--container div {
@@ -483,6 +489,89 @@
     border-radius: 15px;
 }
 
+.detail__card--body {
+    display: flex;
+    place-content: end;
+    width: 100%;
+    height: 100%;
+}
+
+.right--container {
+    height: 100%;
+    width: 40%;
+}
+
+.detail__card--info {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    align-items: center;
+}
+
+.right--container .image--detail img {
+    width: 100%;
+    height: 300px;
+    border-radius: 0 0 20px 20px;
+}
+
+.points {
+    display: flex;
+    justify-content: center;
+  }
+  .points > li {
+    background: var(--very-light-pink);
+    width: 8px;
+    height: 8px;
+    margin: 8px 6px;
+    border-radius: 50%;
+    list-style-type: none;
+    cursor: pointer;
+  }
+  .points > .active {
+    background: var(--hospital-green);
+  }
+  .points > li:hover {
+    background: var(--hospital-green);
+  }
+
+.detail__card--info h4 {
+    font-size: 1.6rem;
+    width: 100%;
+}
+
+.detail__card--info span {
+    font-size: 1.4rem;
+    color: var(--very-light-pink);
+    width: 100%;
+}
+
+.detail__card--info p {
+    display: block;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: var(--very-light-pink);
+}
+
+.detail__card--info button img {
+    height: 24px;
+    width: 24px;
+    margin: 8px;
+}
+
+.main__articles--container section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#except {
+    margin-top: 23.5px;
+}
+
+#except2 {
+    max-width: 89.996936701105%;
+}
+
 @media (max-width: 800px) {
     .desktop--navi .left ul {
         display: none;
@@ -540,4 +629,15 @@
         height: 100%;
         width: 100%;
     }
-}
+
+    .right--container {
+        height: 80%;
+        width: 50%;
+    }
+
+    @media (max-width: 500px) {
+        .right--container {
+            height: 100%;
+            width: 100%;
+        }
+    }
