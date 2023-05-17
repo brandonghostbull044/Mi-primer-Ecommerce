@@ -32,7 +32,7 @@
         <div id="mobile--tres"  class="right">
             <p class="emailsel">brandonleon@gmail.com </p>
             <img src="/icons/flechita.svg" alt="">
-            <img src="/icons/icon_shopping_cart_notification.svg" alt="">
+            <img id="icon-shop-cart"src="/icons/icon_shopping_cart_notification.svg" alt="">
 
             <div class="desktop__menu--container inactive">
                 <ul>
@@ -71,12 +71,71 @@
              <span>Cerrar sesión</span>
          </section>
      </section>
-     
-     <section class="main__items--container">
+
+    <aside class="right--container">
+      <section class="orders--container">
+          <div class="main__articles--container">
+              <div>
+                  <img src="/images/round-shelf.jpg" alt="">
+                  <span>Roun shelf</span>
+                  <p>$35,00</p>
+              </div>
+
+              <div>
+                  <img src="/images/retro-refrigerator.jpg" alt="">
+                  <span>Retro refrigerator</span>
+                  <p>$120,00</p>
+              </div>
+
+              <div>
+                  <img src="/images/round-shelf.jpg" alt="">
+                  <span>Roun shelf</span>
+                  <p>$35,00</p>
+              </div>
+
+              <div>
+                  <img src="/images/retro-refrigerator.jpg" alt="">
+                  <span>Retro refrigerator</span>
+                  <p>$120,00</p>
+              </div>
+              
+              <section>
+                  <header>
+                      <p id="except">Total</p>
+                      <p>$310.00</p>
+                  </header>
+
+                  <button class="primary-buttom" id="except2">Comprar</button>
+              </section>
+          </div>
+      </section>        
+    </aside>
+    
+    <aside class="right--container inactive">
+       
+      <figure class="image--detail">
+          <!-- <img src="/images/retro-refrigerator.jpg" alt=""> -->
+      </figure>
+      <div class="points">
+          <li class="active"></li>
+          <li></li>
+          <li></li>
+        </div>
+      <section class="detail__card--info">
+          <h4>$120,00</h4>
+          <span>Retro Refrigerator</span>
+          <p>With functional and practical interior, this refrigerator also fulfills a decorative function, adding personality and a retro-vintage aesthetic to your kitchen or workspace</p>
+          <button class="primary-buttom">
+              <img src="/icons/bt_add_to_cart.svg" alt="add to cart">Agregar al carrito
+          </button>
+      </section>
+    </aside>
+
+    <section class="main__items--container">
         <div class="items__container--cards">
             
         </div>
-      </section>
+    </section>
     <script src="/script.js"></script>
 </body>
 </html>
