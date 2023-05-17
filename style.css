@@ -263,6 +263,7 @@ html {
     position: absolute;
     display: flex;
     width: auto;
+    height: auto;
     flex-direction: column;
     padding: 50px;
     font-weight: 600;
@@ -285,13 +286,12 @@ html {
 .categories__list--container ul {
     display: inline;
     list-style: none;
-    margin: 0 0 60px 0;
+    margin: 0 0 30px 0;
     width: auto;
 }
 .categories__list--container ul li {
-    font-size: 1.7rem;
-    margin-top: 40px;
-    margin-bottom: 30px;
+    font-size: 1.7rem;;
+    margin: 40px 0 15px 0;
 } 
 
 .categories__list--container ul li:nth-child(7) {
