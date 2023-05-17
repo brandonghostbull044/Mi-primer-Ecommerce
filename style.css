@@ -16,6 +16,11 @@
     padding: 0;
     font-size: 62.5%; 
 }
+
+html {
+    width: 100%;
+}
+
 .container {
     height: 600px;
     display: flex;
@@ -473,7 +478,7 @@
 .desktop--navi .right img:nth-child(3) {
     height: 40px;
     width: 40px;
-    margin: 0 25px;
+    margin: 0 25px 0 0;
 }
 
 .desktop--navi .left ul {
