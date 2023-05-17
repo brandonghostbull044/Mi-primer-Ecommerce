@@ -164,6 +164,7 @@ html {
     align-items: center;
     width: auto;
     height: auto;
+    justify-items: center;
 }
 
 .card__item--image {
@@ -491,13 +492,13 @@ html {
 }
 
 .desktop--navi .left ul li {
-    margin: 0 12px;
+    margin: 0 8px;
     color: var(--very-light-pink);
 }
 
 .desktop--navi .left img {
     width: 150px;
-    margin: 0 30px;
+    margin: 0 20px;
 }
 
 .desktop--navi .left h4 {
@@ -601,7 +602,7 @@ html {
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 927px) {
 
     .logo {
         display: inline-block;

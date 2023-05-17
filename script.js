@@ -53,8 +53,7 @@ productList.push({
     image: "/images/retro-refrigerator.jpg"
 });
 
-function renderProducts(arr) {
-    for (product of arr) {
+    for (product of productList) {
         const productCard = document.createElement('div');
         productCard.classList.add('card__item--container');
         
@@ -81,4 +80,3 @@ function renderProducts(arr) {
         productCard.appendChild(sect);
         itemsContainerCards.appendChild(productCard);
     }
-}
