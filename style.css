@@ -259,11 +259,12 @@ html {
 /* Menú desplegable mobile */
 
 .categories__list--container {
-    position: relative;
+    position: absolute;
     display: flex;
     width: 100%;
     flex-direction: column;padding: 50px;
     font-weight: 600;
+    background-color: var(--white);
 }
 
 .categories__list--container h3 {
