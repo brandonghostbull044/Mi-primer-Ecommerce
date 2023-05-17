@@ -53,6 +53,24 @@ productList.push({
     image: "/images/retro-refrigerator.jpg"
 });
 
+productList.push({
+    namme: "refrigerator",
+    precio: 120,
+    image: "/images/retro-refrigerator.jpg"
+});
+
+productList.push({
+    namme: "computador",
+    precio: 500,
+    image: "/images/retro-refrigerator.jpg"
+});
+
+productList.push({
+    namme: "auto",
+    precio: 5000,
+    image: "/images/retro-refrigerator.jpg"
+});
+
     for (product of productList) {
         const productCard = document.createElement('div');
         productCard.classList.add('card__item--container');

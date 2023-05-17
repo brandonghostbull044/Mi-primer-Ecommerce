@@ -220,6 +220,7 @@ html {
     border: 1px solid var(--very-light-pink);
     border-radius: 6px;
     padding: 20px;
+    background-color: var(--white);
 }
 
 
@@ -261,15 +262,16 @@ html {
 .categories__list--container {
     position: absolute;
     display: flex;
-    width: 100%;
-    flex-direction: column;padding: 50px;
+    width: auto;
+    flex-direction: column;
+    padding: 50px;
     font-weight: 600;
     background-color: var(--white);
 }
 
 .categories__list--container h3 {
     font-size: 1.8rem;
-    
+    display: inline;
 }
 
 .categories__list--container img {
@@ -281,8 +283,10 @@ html {
 }
 
 .categories__list--container ul {
+    display: inline;
     list-style: none;
     margin: 0 0 60px 0;
+    width: auto;
 }
 .categories__list--container ul li {
     font-size: 1.7rem;
@@ -300,6 +304,7 @@ html {
     font-size: var(--sm);
     font-weight: lighter;
     margin-top: 10px;
+    width: auto;
 }
 
 .account__dates--container span:last-child {
@@ -597,7 +602,7 @@ html {
 }
 
 
-@media (min-width: 801px) {
+@media (min-width: 928px) {
     .categories__list--container {
         display: none;
     }
@@ -678,17 +683,9 @@ html {
         display: none;
     }
 
-    .categories__list--container {
-        width: 50%;
-    }
-
     @media (max-width: 500px) {
         .right--container {
             height: 100%;
-            width: 100%;
-        }
-
-        .categories__list--container {
             width: 100%;
         }
     }
