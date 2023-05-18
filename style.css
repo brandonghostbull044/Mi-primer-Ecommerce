@@ -172,6 +172,9 @@ html {
     height: 128px;
     background-color: var(--hospital-green);
     border-radius: 10px;
+    background-image: url(/images/retro-refrigerator.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .card__item--details {
