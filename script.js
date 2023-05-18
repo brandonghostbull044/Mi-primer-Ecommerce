@@ -1,3 +1,4 @@
+/*CONSTANTES*/
 const emailsel = document.querySelector('.emailsel');
 const menuEmail = document.querySelector('.desktop__menu--container')
 const HamMsel = document.querySelector('.menu-Hamburger');
@@ -9,9 +10,7 @@ const iconShopCart = document.querySelector('#icon-shop-cart');
 const shopCart = document.querySelector('.shopCart');
 const itemInfoContainer = document.querySelector('.product__info--container');
 
-
-
-
+/*FUNCIONES*/
 function toggleShopCart() {
     if (!menuMobile.classList.contains('inactive')) {
         menuMobile.classList.add('inactive')
@@ -22,17 +21,16 @@ function toggleShopCart() {
     }
     shopCart.classList.toggle('inactive');
 }
+
 function toggleMobileMenu() {
     if (!shopCart.classList.contains('inactive')) {
         shopCart.classList.add('inactive')
+    } else if (!itemInfoContainer.classList.contains('inactive')) {
+        itemInfoContainer.classList.add('inactive');
     }
     menuMobile.classList.toggle('inactive');
 }
 
-
-
-
-emailsel.addEventListener('click', toggleDesktopMenu);
 function toggleDesktopMenu() {
     if (!shopCart.classList.contains('inactive')) {
         shopCart.classList.add('inactive');
@@ -42,21 +40,21 @@ function toggleDesktopMenu() {
      menuEmail.classList.toggle('inactive');
 }
 
-
-HamMsel.addEventListener('click', toggleMobileMenu);
-
-
-
-closeMsel.addEventListener('click', removeMobileMenu);
 function removeMobileMenu() {
     menuMobile.classList.add('inactive');
 }
 
+/*EVENTOS*/
+emailsel.addEventListener('click', toggleDesktopMenu);
+
+HamMsel.addEventListener('click', toggleMobileMenu);
+
+closeMsel.addEventListener('click', removeMobileMenu);
 
 iconShopCart.addEventListener('click', toggleShopCart);
 
 
-
+/*PRODUCTOS*/
 productList.push({
     namme: "refrigerator",
     precio: 120,
